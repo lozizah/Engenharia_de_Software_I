@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/primaryColor"
+        app:layout_constraintHeight_percent="0.2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/Header"
+        app:layout_constraintStart_toStartOf="@id/Header"
+        android:layout_margin="16dp"
+        tools:text="Olá, XxEmanos_GamerxX"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TextWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Clima agora em Sorocaba"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintTop_toBottomOf="@id/Header"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IconWeather"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:src="@drawable/icon_cloud"
+        app:layout_constraintTop_toBottomOf="@id/TextWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TextTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="19º"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/TextWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IconCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:src="@drawable/icon_cloud"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Poucas nuvens"
+        app:layout_constraintTop_toBottomOf="@id/Header"
+        app:layout_constraintStart_toEndOf="@id/IconCloud"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IconTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/IconCloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:src="@drawable/icon_thermostat"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Sensação 19º"
+        app:layout_constraintTop_toBottomOf="@id/IconCloud"
+        app:layout_constraintStart_toEndOf="@id/IconCloud"
+        android:layout_marginStart="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IconWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/IconTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:src="@drawable/icon_wind"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Vento 21 km/h"
+        app:layout_constraintTop_toBottomOf="@id/IconTemp"
+        app:layout_constraintStart_toEndOf="@id/IconCloud"
+        android:layout_marginStart="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ImageSeasons"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/Header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/seasons_tree"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ImageSeasons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/card_dashboard_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

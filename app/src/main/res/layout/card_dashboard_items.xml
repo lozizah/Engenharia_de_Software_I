@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="16dp"
+    android:background="@drawable/rounded_corner_background"
+    android:layout_margin="16dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/icon_wind"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Icon"
+            app:layout_constraintStart_toStartOf="@id/Icon"
+            tools:text="Catálogo de plantas"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Subtittle"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/Title"
+            app:layout_constraintStart_toStartOf="@id/Title"
+            tools:text="12 espécies disponíveis"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Observation"
+            android:textColor="@color/gray_text"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Subtittle"
+            app:layout_constraintStart_toStartOf="@id/Subtittle"
+            tools:text="12 plantas"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_forward"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Icon"
+            app:layout_constraintStart_toEndOf="@id/Title"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
