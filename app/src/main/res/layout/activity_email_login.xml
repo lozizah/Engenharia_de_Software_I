@@ -62,6 +62,7 @@
             android:background="@drawable/rounded_corner_background" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonLogin"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button_background"

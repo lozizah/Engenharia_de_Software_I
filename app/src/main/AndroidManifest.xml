@@ -21,6 +21,9 @@
         <activity android:name=".screens.login.ActivityEmailLogin"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".screens.dashboard.ActivityDashboard"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
     </application>
 
 </manifest>

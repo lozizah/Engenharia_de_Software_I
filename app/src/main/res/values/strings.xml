@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">prj_plants_catalog</string>
+    <string-array name="soil_types">
+        <item>Argiloso</item>
+        <item>Arenoso</item>
+        <item>Siltoso</item>
+        <item>Lixiviado</item>
+        <item>Latossólico</item>
+        <item>Humífero</item>
+        <item>Calcário</item>
+    </string-array>
+
+    <string-array name="solar_incidence">
+        <item>Sol</item>
+        <item>Meia-sombra</item>
+        <item>Sombra total</item>
+    </string-array>
+
+    <string-array name="fertilizer_types">
+        <item>Orgânico</item>
+        <item>Mineral</item>
+        <item>Químico</item>
+    </string-array>
+
 </resources>
