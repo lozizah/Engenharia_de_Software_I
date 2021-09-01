@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prj_plants_catalog">
 
-        <activity android:name=".screens.login.ActivityLoginOptions"
+        <activity android:name=".screens.auth.ActivityLoginOptions"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -18,12 +18,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".screens.login.ActivityEmailLogin"
+        <activity android:name=".screens.auth.ActivityEmailLogin"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
         <activity android:name=".screens.dashboard.ActivityDashboard"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-
+        <activity android:name=".screens.catalogs.PlantsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".screens.catalogs.FertilizersActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".screens.auth.ActivityEmailRegister"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
     </application>
 
 </manifest>

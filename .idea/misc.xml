@@ -12,8 +12,10 @@
         <entry key="app/src/main/res/drawable/rounded_corner_background.xml" value="0.3953125" />
         <entry key="app/src/main/res/drawable/rounded_top_background.xml" value="0.3892307692307692" />
         <entry key="app/src/main/res/drawable/rounded_white_corner_background.xml" value="0.3892307692307692" />
+        <entry key="app/src/main/res/layout/activity_catalog.xml" value="0.37916666666666665" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_email_login.xml" value="0.37916666666666665" />
+        <entry key="app/src/main/res/layout/activity_email_register.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_options_login.xml" value="0.37916666666666665" />
         <entry key="app/src/main/res/layout/activity_plants_catalog.xml" value="0.37916666666666665" />
@@ -22,6 +24,7 @@
         <entry key="app/src/main/res/layout/fragment_add_fertilizer.xml" value="0.37916666666666665" />
         <entry key="app/src/main/res/layout/fragment_add_plants.xml" value="0.37916666666666665" />
         <entry key="app/src/main/res/layout/rounded_corners_background.xml" value="0.37916666666666665" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.37916666666666665" />
       </map>
     </option>
   </component>
@@ -30,5 +33,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>

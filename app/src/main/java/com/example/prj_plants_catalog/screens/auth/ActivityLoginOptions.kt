@@ -1,4 +1,4 @@
-package com.example.prj_plants_catalog.screens.login
+package com.example.prj_plants_catalog.screens.auth
 
 import android.content.Intent
 import android.os.Bundle
