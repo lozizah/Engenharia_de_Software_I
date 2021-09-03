@@ -29,12 +29,21 @@ class ActivityEmailLogin : AppCompatActivity() {
         with(binding) {
             ButtonLogin.setOnClickListener {
                 firebaseAuth.signIn(InputEmail.text.toString(), InputPassword.text.toString(), onSuccess = {
-                    startActivity(Intent(this@ActivityEmailLogin, ActivityDashboard::class.java))
+                    if (!firebaseAuth.verifyEmailConfirmation(it))
+                        Toast.makeText(this@ActivityEmailLogin, "Um e-mail de confirmação foi enviado. Sua conta ficará bloqueada" +
+                            " até a confirmação", Toast.LENGTH_SHORT).show()
+                    else startActivity(Intent(this@ActivityEmailLogin, ActivityDashboard::class.java))
                 }, onError = {
                     Toast.makeText(this@ActivityEmailLogin, "Usuário ou senha incorretos :(", Toast.LENGTH_SHORT).show()
                 })
             }
             NotRegisteredAlready.setOnClickListener { startActivity(Intent(this@ActivityEmailLogin, ActivityEmailRegister::class.java)) }
+            ButtonForgottenYourPassword.setOnClickListener { startActivity(Intent(this@ActivityEmailLogin, ActivityNewPassword::class.java))}
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        firebaseAuth.currentUser()?.reload()
     }
 }

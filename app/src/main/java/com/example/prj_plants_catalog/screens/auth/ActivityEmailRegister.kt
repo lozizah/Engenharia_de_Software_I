@@ -22,7 +22,9 @@ class ActivityEmailRegister : AppCompatActivity() {
             ButtonRegister.setOnClickListener {
                 if(InputFirstPassword.text.toString() == InputSecondPassword.text.toString()) {
                     firebaseAuth.createAccount(InputEmail.text.toString(), InputFirstPassword.text.toString(), onSuccess = {
-                        startActivity(Intent(this@ActivityEmailRegister, ActivityDashboard::class.java))
+                        Toast.makeText(this@ActivityEmailRegister, "Um e-mail de confirmação foi enviado. Sua conta ficará bloqueada" +
+                                " até a confirmação", Toast.LENGTH_LONG).show()
+                        finish()
                     }, onError = {
                         Toast.makeText(this@ActivityEmailRegister, "Erro ao tentar realizar o registro :(", Toast.LENGTH_SHORT).show()
                     })
