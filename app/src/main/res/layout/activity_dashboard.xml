@@ -29,6 +29,7 @@
             app:layout_constraintTop_toTopOf="@id/Header"
             android:background="@color/primaryColor"
             android:src="@drawable/icon_disconnect"
+            android:tint="@color/white"
             android:layout_margin="8dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView

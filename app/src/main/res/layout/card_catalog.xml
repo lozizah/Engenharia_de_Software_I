@@ -25,40 +25,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:src="@drawable/icon_search" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/TextTittle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/ImageCard"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"
-            tools:text="Test1"
-            android:textSize="12sp"
-            android:textColor="@color/gray_text"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/TextSubtittle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/TextTittle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:text="Test1"
-            android:textSize="12sp"
-            android:textColor="@color/gray_text"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/TextObs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/TextSubtittle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:text="Test1"
-            android:textSize="12sp"
-            android:textColor="@color/gray_text"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prj_plants_catalog">
 
-        <activity android:name=".screens.auth.ActivityLoginOptions"
+        <activity android:name=".screens.auth.ActivityEmailLogin"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".screens.auth.ActivityEmailLogin"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
         <activity android:name=".screens.dashboard.ActivityDashboard"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>

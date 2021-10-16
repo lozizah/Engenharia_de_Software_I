@@ -16,13 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="210dp"
             android:src="@drawable/image_plant"
-            android:layout_marginTop="36dp"/>
+            android:layout_marginTop="24dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/TextLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Autenticação"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="26sp"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Por favor faça o login para continuar"
             android:layout_marginStart="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="8dp"
             android:textColor="@color/gray_text"/>
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -66,16 +66,6 @@
             android:background="@drawable/rounded_corner_background" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/ButtonLogin"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button_background"
-            android:layout_gravity="center"
-            android:text="LOGIN"
-            android:layout_marginTop="32dp"
-            android:textStyle="bold"/>
-
-        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ButtonForgottenYourPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,8 +73,19 @@
             android:background="@color/primaryColor"
             android:textColor="@color/accentColor"
             android:textSize="12sp"
-            android:layout_gravity="center"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
             style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_background"
+            android:layout_gravity="center"
+            android:text="entrar"
+            android:textStyle="bold"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/NotRegisteredAlready"
@@ -92,7 +93,40 @@
             android:layout_height="wrap_content"
             android:text="Ainda não têm uma conta? Cadastre-se!"
             android:layout_gravity="bottom|center"
+            android:layout_marginTop="8dp"
             android:textColor="@color/gray_text"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/GoogleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:drawableStart="@drawable/icon_google"
+            android:paddingHorizontal="8dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="24dp"
+            android:textSize="12sp"
+            android:drawablePadding="16dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:text="Entre com o Google"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/FacebookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:drawableStart="@drawable/face"
+            android:paddingHorizontal="8dp"
+            android:drawablePadding="16dp"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:text="Entre com o Facebook"
+            android:textColor="@color/white"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

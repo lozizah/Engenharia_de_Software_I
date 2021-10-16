@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.prj_plants_catalog.databinding.ActivityDashboardBinding
-import com.example.prj_plants_catalog.screens.auth.ActivityLoginOptions
+import com.example.prj_plants_catalog.screens.auth.ActivityEmailLogin
 import com.example.prj_plants_catalog.screens.dashboard.adapter.AdapterDashboard
 import com.example.prj_plants_catalog.utils.FirebaseAuthentication
 
@@ -23,7 +23,7 @@ class ActivityDashboard : AppCompatActivity() {
             OptionList.adapter = AdapterDashboard()
             ButtonLogout.setOnClickListener {
                 firebaseAuth.signOut()
-                startActivity(Intent(this@ActivityDashboard, ActivityLoginOptions::class.java))
+                startActivity(Intent(this@ActivityDashboard, ActivityEmailLogin::class.java))
             }
         }
     }
